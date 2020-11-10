@@ -1,14 +1,5 @@
 ## Segfaults: GDB Scripts to the Rescue
 
----
-title: Segfaults: GDB Scripts to the Rescue
-published: true
-date: 2020-11-10 11:53:36 UTC
-tags: #gdb #debugging #troubleshooting #showdev
-canonical_url: https://marianopeck.blog/2020/11/10/segfaults-gdb-scripts-to-the-rescue/
-cover_image: https://dev-to-uploads.s3.amazonaws.com/i/af92nvsvr6k2xk6ewu5b.jpg
----
-
 We recently discovered that we would very sporadically get a segmentation fault when running the whole test suite of the [VAST Platform (VA Smalltalk)](https://www.instantiations.com/products/vasmalltalk/index.html) on Linux.
 
 During our initial investigation, we realized this was not something new, but that the problem had existed for many years. It happens only on Linux (not Windows), and with all program variants: with and without JIT compiler, with and without memory sharing, 32 and 64-bit, etc. At least we knew it was not related to those broader differences.
